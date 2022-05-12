@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="default.css">
+
+    <link id="theme-style" rel="stylesheet" type="text/css" href="purple.css">
 </head>
 <body>
 
@@ -129,13 +131,66 @@
 
 <section class="s1">
     <div class="main-container">
-        portfolio
+        <h3 style="text-align: center">Some of my past projects</h3>
+        
+        <div class="post-wrapper">
+
+            <div>
+                <div class="post">
+                    <img class ="thumbnail" src="images/greenShield.png" alt="blog_post_card">
+                    <div class="post-preview">
+                        <h6 class="post-title">Post Title</h6>
+                        <p class="post-intro">This is a sentence. Som more text</p>
+                        <a href="post.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="post">
+                    <img class ="thumbnail" src="images/spectrol_oscope.png" alt="blog_post_card">
+                    <div class="post-preview">
+                        <h6 class="post-title">Post Title</h6>
+                        <p class="post-intro">This is a sentence. Som more text</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="post">
+                    <img class ="thumbnail" src="images/robotic-arm.png" alt="blog_post_card">
+                    <div class="post-preview">
+                        <h6 class="post-title">Post Title</h6>
+                        <p class="post-intro">This is a sentence. Som more text</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
     </div>
 </section>
 
 <section class="s1">
     <div class="main-container">
-        Contact
+        <h3 style="text-align: center;">Get in touch </h3>
+
+        <form id="contact-form" action="">
+
+            <label>Name</label>
+            <input class="input-field" type="text" name="name" required>
+
+            <label>Subject</label>
+            <input class="input-field" type="text" name="subject" required>
+
+            <label>Email</label>
+            <input class="input-field" type="email" name="email" required>
+
+            <label>Message</label>
+            <textarea class="input-field" name="message" required></textarea>
+
+            <input id="submit-btn" type="submit" value="Send">
+        </form>
     </div>
 </section>
 

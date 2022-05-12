@@ -13,6 +13,8 @@
     --previewBg: rgb(251, 249, 243, 0.8);
 
     --previewShadow: #f0ead6;
+
+    --buttonColor: black;
 }
 
 html, body{
@@ -95,6 +97,10 @@ h6{font-size: 16px;}
     justify-content: space-between;
     align-items: center;
 
+}
+
+#navigation a{
+    color: var(--mainText);
 }
 
 #navigation{
@@ -279,6 +285,86 @@ h6{font-size: 16px;}
     .main-container{
         width: 95%;
     }
+}
+
+/* Blog posts preview */
+.post-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.post{
+    border: 1px solid var(--borderColor);
+
+    box-shadow: 0px 0px 7px 3px rgba(179,179,179,1);
+    -webkit-box-shadow: 0px 0px 7px 3px rgba(179,179,179,1);
+    -moz-box-shadow: 0px 0px 7px 3px rgba(179,179,179,1);
+
+}
+
+.thumbnail{
+    display: block;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.post-preview{
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+.post-title{
+    color: black;
+    margin: 0;
+}
+
+.post-intro{
+    color: #4b5156;
+    font-size: 14px;
+}
+
+#contact-form{
+    display: block;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid var(--borderColor);
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--mainColor);
+    margin-bottom: 50px;
+}
+
+#contact-form label{
+    line-height: 2.7rem;
+}
+
+#contact-form textarea{
+    min-height: 100px;
+    font-size: 14px;
+}
+
+.input-field{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--secondaryColor);
+    border-radius: 5px;
+    border: 1px solid var(--borderColor);
+    font-size: 14px;
+}
+
+#submit-btn{
+    margin-top: 10px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ffffff;
+    background-color: var(--buttonColor);
+    border: none;
 }
 
 @media screen and (max-width: 800px){
