@@ -22,6 +22,10 @@ html, body{
     margin: 0;
 }
 
+body *{
+    transition: 0.3s linear;
+}
+
 h1, h2, h3, h4, h5, h6, strong{
     color:var(--mainText);
     font-family: 'Prompt', sans-serif;
@@ -185,6 +189,10 @@ h6{font-size: 16px;}
     border-width: 5px;
 }
 
+#light-mode{
+    background-color: #ffffff;
+}
+
 #blue-mode{
     background-color: #192734;
 }
@@ -193,7 +201,7 @@ h6{font-size: 16px;}
     background-color: #78866b;
 }
 
-#purple{
+#purple-mode{
     background-color: #7e4c74;
 }
 
