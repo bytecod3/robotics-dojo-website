@@ -55,6 +55,7 @@ p, li, span, label, input, textarea{
 
 a{
     text-decoration:none;
+    font-family: 'Prompt', sans-serif;
     color: #17a2b8;
 }
 
@@ -82,9 +83,7 @@ h6{font-size: 16px;}
     border: 1px solid var(--borderColor);
     border-radius:5px 5px 0 0;
 
-    box-shadow: 0px 0px 7px 4px rgba(179,179,179,1);
-    -webkit-box-shadow: 0px 0px 7px 4px rgba(179,179,179,1);
-    -moz-box-shadow: 0px 0px 7px 4px rgba(179,179,179,1);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -142,9 +141,7 @@ h6{font-size: 16px;}
     border-radius: 50%;
     margin: 5px;
 
-    box-shadow: 0px 0px 7px 3px rgba(179,179,179,1);
-    -webkit-box-shadow: 0px 0px 7px 3px rgba(179,179,179,1);
-    -moz-box-shadow: 0px 0px 7px 3px rgba(179,179,179,1);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
 
 }
@@ -178,9 +175,7 @@ h6{font-size: 16px;}
     margin: 5px;
     border: 2px solid var(--borderColor);
 
-    box-shadow: 0px 0px 7px 3px rgba(179,179,179,1);
-    -webkit-box-shadow: 0px 0px 7px 3px rgba(179,179,179,1);
-    -moz-box-shadow: 0px 0px 7px 3px rgba(179,179,179,1);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
     cursor: pointer;
 }
@@ -307,9 +302,7 @@ h6{font-size: 16px;}
 .post{
     border: 1px solid var(--borderColor);
 
-    box-shadow: 0px 0px 7px 3px rgba(179,179,179,1);
-    -webkit-box-shadow: 0px 0px 7px 3px rgba(179,179,179,1);
-    -moz-box-shadow: 0px 0px 7px 3px rgba(179,179,179,1);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
 }
 
@@ -374,6 +367,53 @@ h6{font-size: 16px;}
     background-color: var(--buttonColor);
     border: none;
 }
+
+.sticky{
+    position: sticky;
+    top: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 1000;
+    background: whitesmoke;
+}
+
+/* Styles for introduction page */
+
+.introduction{
+    max-width: 1000px;
+    background: whitesmoke;
+    padding: 20px;
+
+}
+
+.profile{
+    display: flex;
+    max-width: 400px;
+    text-align: center;
+    height: 400px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.profile img{
+    width: 100%;
+
+}
+
+@media screen and (max-width: 800px){
+    .profile{
+        height: 250px;
+        width: 220px;
+    }
+    .profile img{
+        width: 100%;
+
+    }
+}
+
+/* End of styles for introduction page */
+
 
 @media screen and (max-width: 800px){
     .intro-wrapper{
