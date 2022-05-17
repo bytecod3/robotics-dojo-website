@@ -1,14 +1,14 @@
 let theme = localStorage.getItem('theme');
 
-if (theme === null){
-    setTheme('blue');
-}else{
-    setTheme(theme);
-}
+// if (theme === null){
+//     setTheme('white');
+// }else{
+//     setTheme(theme);
+// }
 
 let themeDots = document.getElementsByClassName('theme-dot');
 
-for (var i=0; themeDots.length > i; i++){
+for (let i=0; themeDots.length > i; i++){
     themeDots[i].addEventListener('click', function(){
         let mode = this.dataset.mode;
         console.log('theme: '+ mode)

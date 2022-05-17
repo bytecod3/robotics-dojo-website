@@ -20,6 +20,7 @@
 html, body{
     padding: 0;
     margin: 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body *{
@@ -28,13 +29,12 @@ body *{
 
 h1, h2, h3, h4, h5, h6, strong{
     color:var(--mainText);
-    font-family: 'Prompt', sans-serif;
 }
 
 p, li, span, label, input, textarea{
     color: var(--secondaryText);
-    font-family: 'Montserrat', sans-serif;
 }
+
 
 .s1{
     background-color: var(--mainColor);
@@ -57,6 +57,10 @@ a{
     text-decoration:none;
     font-family: 'Prompt', sans-serif;
     color: #17a2b8;
+}
+
+a:hover{
+    color: #fc6058;
 }
 
 ul{
@@ -268,7 +272,7 @@ h6{font-size: 16px;}
 
 }
 
-#skills{
+.skills{
     display: flex;
     justify-content: space-evenly;
     background-color: var(--previewShadow);
